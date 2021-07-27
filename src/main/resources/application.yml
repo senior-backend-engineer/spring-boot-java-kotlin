@@ -1,0 +1,29 @@
+management:
+  management:
+    metrics:
+      export:
+        statsd:
+          host: ${DD_AGENT_HOST}
+          port: 8125
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health,info,metrics
+
+
+hello-conf-java:
+  title: javaTitle
+  sample-list:
+    - key: firstKey
+      value: firstValue
+    - key: secondKey
+      value: secondValue
+
+hello-conf-kotlin:
+  title: kotlinTitle
+  sample-list:
+    - key: firstKey
+      value: firstValue
+    - key: secondKey
+      value: secondValue
